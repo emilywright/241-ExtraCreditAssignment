@@ -248,12 +248,17 @@ public class BinarySearchTree {
 
 	  Stack<node> nodeStack = new Stack<node>();
     node[] returnArr;
-    returnArr = new node[5];
+    returnArr = new node[10];
 	  returnArr[0] = treeMax(root);
     returnArr[1] = treePredecessor(returnArr[0]);
     returnArr[2] = treePredecessor(returnArr[1]);
     returnArr[3] = treePredecessor(returnArr[2]);
     returnArr[4] = treePredecessor(returnArr[3]);
+    returnArr[5] = treePredecessor(returnArr[4]);
+    returnArr[6] = treePredecessor(returnArr[5]);
+    returnArr[7] = treePredecessor(returnArr[6]);
+    returnArr[8] = treePredecessor(returnArr[7]);
+    returnArr[9] = treePredecessor(returnArr[8]);
 
     return returnArr;
   } // End MostPopularName

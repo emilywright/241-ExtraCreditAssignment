@@ -45,6 +45,11 @@ public class driver {
 
   public static void handleTree(Scanner fileInfo10, Scanner fileInfo11, Scanner fileInfo12, Scanner fileInfo13, Scanner fileInfo14) {
 
+    // All years
+    BinarySearchTree maleTree = new BinarySearchTree();
+    BinarySearchTree femaleTree = new BinarySearchTree();
+    int maleTotal = 0;
+    int femaleTotal = 0;
     // 2010
     BinarySearchTree maleTree10 = new BinarySearchTree();
     BinarySearchTree femaleTree10 = new BinarySearchTree();
@@ -85,13 +90,19 @@ public class driver {
       if (currLineSplit[1].charAt(0) == 'M' || currLineSplit[1].charAt(0) == 'm') {
 
         maleTotal10 += Integer.parseInt(currLineSplit[2]);
+        maleTotal += Integer.parseInt(currLineSplit[2]);
         node currNode = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
+        node currNode2 = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
         BinarySearchTree.treeInsert(maleTree10, currNode);
+        BinarySearchTree.treeInsert(maleTree, currNode2);
       } else {
 
         femaleTotal10 += Integer.parseInt(currLineSplit[2]);
-        node currNode = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
-        BinarySearchTree.treeInsert(femaleTree10, currNode);
+        femaleTotal += Integer.parseInt(currLineSplit[2]);
+        node currNode1 = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
+        node currNode2 = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
+        BinarySearchTree.treeInsert(femaleTree10, currNode1);
+        BinarySearchTree.treeInsert(femaleTree, currNode2);
       }
     }
 
@@ -103,13 +114,19 @@ public class driver {
       if (currLineSplit[1].charAt(0) == 'M' || currLineSplit[1].charAt(0) == 'm') {
 
         maleTotal11 += Integer.parseInt(currLineSplit[2]);
+        maleTotal += Integer.parseInt(currLineSplit[2]);
         node currNode = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
+        node currNode2 = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
         BinarySearchTree.treeInsert(maleTree11, currNode);
+        BinarySearchTree.treeInsert(maleTree, currNode2);
       } else {
 
         femaleTotal11 += Integer.parseInt(currLineSplit[2]);
+        femaleTotal += Integer.parseInt(currLineSplit[2]);
         node currNode = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
+        node currNode2 = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
         BinarySearchTree.treeInsert(femaleTree11, currNode);
+        BinarySearchTree.treeInsert(femaleTree, currNode2);
       }
     }
 
@@ -121,13 +138,19 @@ public class driver {
       if (currLineSplit[1].charAt(0) == 'M' || currLineSplit[1].charAt(0) == 'm') {
 
         maleTotal12 += Integer.parseInt(currLineSplit[2]);
+        maleTotal += Integer.parseInt(currLineSplit[2]);
         node currNode = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
+        node currNode2 = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
         BinarySearchTree.treeInsert(maleTree12, currNode);
+        BinarySearchTree.treeInsert(maleTree, currNode2);
       } else {
 
         femaleTotal12 += Integer.parseInt(currLineSplit[2]);
+        femaleTotal += Integer.parseInt(currLineSplit[2]);
         node currNode = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
+        node currNode2 = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
         BinarySearchTree.treeInsert(femaleTree12, currNode);
+        BinarySearchTree.treeInsert(femaleTree, currNode2);
       }
     }
 
@@ -139,13 +162,19 @@ public class driver {
       if (currLineSplit[1].charAt(0) == 'M' || currLineSplit[1].charAt(0) == 'm') {
 
         maleTotal13 += Integer.parseInt(currLineSplit[2]);
+        maleTotal += Integer.parseInt(currLineSplit[2]);
         node currNode = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
+        node currNode2 = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
         BinarySearchTree.treeInsert(maleTree13, currNode);
+        BinarySearchTree.treeInsert(maleTree10, currNode2);
       } else {
 
         femaleTotal13 += Integer.parseInt(currLineSplit[2]);
+        femaleTotal += Integer.parseInt(currLineSplit[2]);
         node currNode = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
+        node currNode2 = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
         BinarySearchTree.treeInsert(femaleTree13, currNode);
+        BinarySearchTree.treeInsert(femaleTree, currNode2);
       }
     }
 
@@ -157,31 +186,40 @@ public class driver {
       if (currLineSplit[1].charAt(0) == 'M' || currLineSplit[1].charAt(0) == 'm') {
 
         maleTotal14 += Integer.parseInt(currLineSplit[2]);
+        maleTotal += Integer.parseInt(currLineSplit[2]);
         node currNode = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
+        node currNode2 = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
         BinarySearchTree.treeInsert(maleTree14, currNode);
+        BinarySearchTree.treeInsert(maleTree, currNode2);
       } else {
 
         femaleTotal14 += Integer.parseInt(currLineSplit[2]);
+        femaleTotal += Integer.parseInt(currLineSplit[2]);
         node currNode = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
+        node currNode2 = new node(currLineSplit[0], Integer.parseInt(currLineSplit[2]), currLineSplit[1].charAt(0));
         BinarySearchTree.treeInsert(femaleTree14, currNode);
+        BinarySearchTree.treeInsert(femaleTree, currNode2);
       }
     }
 
     TrendyNames(maleTree10, femaleTree10, maleTree11, femaleTree11, maleTree12, femaleTree12, maleTree13, femaleTree13, maleTree14, femaleTree14,
-    maleTotal10, femaleTotal10, maleTotal11, femaleTotal11, maleTotal12, femaleTotal12, maleTotal13, femaleTotal13, maleTotal14, femaleTotal14);
+    maleTotal10, femaleTotal10, maleTotal11, femaleTotal11, maleTotal12, femaleTotal12, maleTotal13, femaleTotal13, maleTotal14, femaleTotal14,
+    femaleTree, maleTree, femaleTotal, maleTotal);
 
   }
 
   public static void TrendyNames(BinarySearchTree maleTree10, BinarySearchTree femaleTree10, BinarySearchTree maleTree11, BinarySearchTree femaleTree11,
   BinarySearchTree maleTree12, BinarySearchTree femaleTree12, BinarySearchTree maleTree13, BinarySearchTree femaleTree13, BinarySearchTree maleTree14,
   BinarySearchTree femaleTree14, int maleTotal10, int femaleTotal10, int maleTotal11, int femaleTotal11, int maleTotal12, int femaleTotal12,
-  int maleTotal13, int femaleTotal13, int maleTotal14, int femaleTotal14) {
+  int maleTotal13, int femaleTotal13, int maleTotal14, int femaleTotal14, BinarySearchTree femaleTree, BinarySearchTree maleTree,
+  int femaleTotal, int maleTotal) {
 
+    System.out.println("in");
     //2010
     //This function returns the top occurences in an array of size 5. So we init two seperate arrays since we need female and male info.
       node[] femArr10 = BinarySearchTree.MostPopularName(femaleTree10.root);
       node[] malArr10 = BinarySearchTree.MostPopularName(maleTree10.root);
-      System.out.println("2010: ");
+      System.out.println("\n2010: ");
       System.out.println("Female name:  " + "Frequency:    " + "Percentage:   " + "Male name:    " + "Frequency:    " + "Percentage:   ");
 
       //Again all for statements are just used to ensure formatting is pretty, it's less confusing than it looks.
@@ -361,6 +399,44 @@ public class driver {
                 System.out.printf("%.7f", (float)malArr14[i].occur / (float)maleTotal14 * 100);
                 System.out.print("%");
               }
+
+              // All years
+              //This function returns the top occurences in an array of size 5. So we init two seperate arrays since we need female and male info.
+                node[] femArr = BinarySearchTree.MostPopularName(femaleTree.root);
+                node[] malArr = BinarySearchTree.MostPopularName(maleTree.root);
+                System.out.println("\n\nAll years: ");
+                System.out.println("Female name:  " + "Frequency:    " + "Percentage:   " + "Male name:    " + "Frequency:    " + "Percentage:   ");
+
+                //Again all for statements are just used to ensure formatting is pretty, it's less confusing than it looks.
+                for (int i = 0; i < femArr.length; i++) {
+                  //Female names from here down
+                  System.out.print("\n" + femArr[i].name);
+                  for (int o = 0; o < 14 - femArr[i].name.length(); o++){
+                    System.out.print(" ");
+                  }
+                  System.out.print(femArr[i].occur);
+                  for (int o = 0; o < 14 - String.valueOf(femArr[i].occur).length(); o++){
+                    System.out.print(" ");
+                  }
+                  System.out.printf("%.7f", (float)femArr[i].occur / (float)femaleTotal * 100);
+                  System.out.print("%");
+                  for (int o = 0; o < 4; o++){
+                    System.out.print(" ");
+                  }
+
+                  //Male names from here down
+                  System.out.print(malArr[i].name);
+                  for (int o = 0; o < 14 - malArr[i].name.length(); o++){
+                    System.out.print(" ");
+                  }
+                  System.out.print(malArr[i].occur);
+                  for (int o = 0; o < 14 - String.valueOf(malArr[i].occur).length(); o++){
+                    System.out.print(" ");
+                  }
+                  System.out.printf("%.7f", (float)malArr[i].occur / (float)maleTotal * 100);
+                  System.out.print("%");
+                }
+              System.out.println();
 
   }
 

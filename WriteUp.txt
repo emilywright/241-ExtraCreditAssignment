@@ -1,0 +1,38 @@
+1. Your name
+Emily Wright
+
+2. An acknowledgement and discussion of any parts of the program that are not
+working. Failure to disclose obvious problems will result in additional penalties.
+
+Everything is working, however I am not sure if I had to input five years or if
+I should implement my program to only be any number of years. Also my input is based
+on having the test cases be from 2010-2014. Another thing about the program I was
+unsure of is if I was supposed to allow duplicates in the final list of 10 female
+and 10 male babies for all 5 years. I decided it only made sense because it would
+show the overall trend.
+
+3. An acknowledgment and discussion of any parts of the program that appear to
+be inefficient (in either time or space complexity).
+
+The program takes about 15 - 20 seconds to run. My program is very repetitive for
+inputting, finding the popularity and printing for the five different test cases.
+This could have slowed the program down.
+
+4. A discussion of the portions of the assignment that were most challenging.
+What about those portions was challenging?
+
+A lot of my program was copied from my previous work with assignment three, so
+the most challenging part was how to manipulate my previous program to make it work
+with this new assignment. Another challenge I got held up on was make one large
+binary search tree for all five years. I had to create a separate node for the overall
+tree, even though it was the same node for the separate year trees.
+
+5. A discussion on how you approached testing that your program was correct and
+asymptotically efficient. What did test1.txt test? What did test2.txt test?
+
+My testing was efficient because it took less time to run because of the less Data,
+rather then the large data files that were given. I used the two test files yob2018.txt
+and yob2017.txt. I used yob2018.txt to make sure it still printed the overall top
+ten names, even though the names were all different from the other 4 files. I used
+yob2017.txt to make sure the percentages were printing correctly by using smaller
+numbers.
